@@ -423,24 +423,8 @@ void utama_lapis1(void) {
 	glVertex3d(-22.494768, -0.069272, 7.823372);
 	glEnd();
 }
-void tampil(void)
-{
-	if (is_depth)
-		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	else
-		glClear(GL_COLOR_BUFFER_BIT);
 
-	
-	tembokL();
-	tembok2();
-	utama_lapis1();
-
-
-
-
-
-	
-
+void utama_lapis2(void) {
 	//utama lapis2
 	glBegin(GL_POLYGON);
 	glColor3f(1.0, 0.8, 0.0);
@@ -503,6 +487,490 @@ void tampil(void)
 	glVertex3d(-14.65197, -0.069272, -40.047691);
 	glVertex3d(-14.65197, 19.043976, -40.047691);
 	glEnd();
+
+	//tengah 2
+	glBegin(GL_POLYGON);
+	glColor3f(0.0, 1.0, 0.0);
+	glVertex3d(-14.65197, 19.043976, -40.047691);
+	glVertex3d(-14.65197, -0.069272, -40.047691);
+	glVertex3d(-14.65197, -0.069272, -19.304991);
+	glVertex3d(-14.65197, 19.043976, -19.304991);
+	glEnd();
+
+	//tengah 2
+	glBegin(GL_POLYGON);
+	glColor3f(0.0, 1.0, 0.0);
+	glVertex3d(-14.65197, 19.043976, -19.304991);
+	glVertex3d(-14.65197, -0.069272, -19.304991);
+	glVertex3d(-12.50913, -0.069272, -19.304991);
+	glVertex3d(-12.50913, 19.043976, -19.304991);
+	glEnd();
+
+	//tengah2
+	glBegin(GL_POLYGON);
+	glColor3f(0.0, 1.0, 0.0);
+	glVertex3d(-12.50913, 19.043976, -19.304991);
+	glVertex3d(-12.50913, -0.069272, -19.304991);
+	glVertex3d(-12.50913, -0.069272, -0.019424);
+	glVertex3d(-12.50913, 19.043976, -0.019424);
+	glEnd();
+
+	//tengah2
+	glBegin(GL_POLYGON);
+	glColor3f(0.0, 1.0, 0.0);
+	glVertex3d(-12.50913, 19.043976, -0.019424);
+	glVertex3d(-12.50913, -0.069272, -0.019424);
+	glVertex3d(-10.366289, -0.069272, -0.019424);
+	glVertex3d(-10.366289, 19.043976, -0.019424);
+	glEnd();
+
+	//tengah2
+	glBegin(GL_POLYGON);
+	glColor3f(0.0, 1.0, 0.0);
+	glVertex3d(-10.366289, 19.043976, -0.019424);
+	glVertex3d(-10.366289, -0.069272, -0.019424);
+	glVertex3d(-10.366289, -0.069272, 11.380488);
+	glVertex3d(-10.366289, 19.043976, 11.380488);
+	glEnd();
+
+	//tengah2
+	glBegin(GL_POLYGON);
+	glColor3f(0.0, 0.0, 1.0);
+	glVertex3d(-10.366289, 19.043976, 11.380488);
+	glVertex3d(-10.366289, -0.069272, 11.380488);
+	glVertex3d(-11.051997, -0.069272, 11.380488);
+	glVertex3d(-11.051997, 19.043976, 11.380488);
+	glEnd();
+
+	//tengah2
+	glBegin(GL_POLYGON);
+	glColor3f(0.0, 0.0, 1.0);
+	glVertex3d(-11.051997, 19.043976, 11.380488);
+	glVertex3d(-11.051997, -0.069272, 11.380488);
+	glVertex3d(-11.051997, -0.069272, 7.094806);
+	glVertex3d(-11.051997, 19.043976, 7.094806);
+	glEnd();
+
+	//tengah2
+	glBegin(GL_POLYGON);
+	glColor3f(0.0, 0.0, 1.0);
+	glVertex3d(-11.051997, 19.043976, 7.094806);
+	glVertex3d(-11.051997, -0.069272, 7.094806);
+	glVertex3d(-23.223333, -0.069272, 7.094806);
+	glVertex3d(-23.223333, 19.043976, 7.094806);
+	glEnd();
+
+	//tengah 2
+	glBegin(GL_POLYGON);
+	glColor3f(0.0, 0.0, 1.0);
+	glVertex3d(-23.223333, 19.043976, 7.094806);
+	glVertex3d(-23.223333, -0.069272, 7.094806);
+	glVertex3d(-23.223333, -0.069272, 19.266142);
+	glVertex3d(-23.223333, 19.043976, 19.266142);
+	glEnd();
+
+	//tengah2
+	glBegin(GL_POLYGON);
+	glColor3f(0.0, 0.0, 1.0);
+	glVertex3d(-13.923405, -0.069272, -20.03356);
+	glVertex3d(-11.780563, -0.069272, -20.03356);
+	glVertex3d(-12.50913, -0.069272, -19.304991);
+	glVertex3d(-14.65197, -0.069272, -19.304991);
+	glEnd();
+}
+void lapisan_dinding(void) {
+
+	//atas
+	glBegin(GL_POLYGON);
+	glColor3f(1.0, 0.0, 1.0);
+	glVertex3d(-11.780563, 19.043976, -20.03356);
+	glVertex3d(-13.923405, 19.043976, -20.03356);
+	glVertex3d(-14.65197, 19.043976, -19.304991);
+	glVertex3d(-12.50913, 19.043976, -19.304991);
+	glEnd();
+
+	//atas
+	glBegin(GL_POLYGON);
+	glColor3f(1.0, 0.0, 1.0);
+	glVertex3d(5.362164, 19.043976, -39.31913);
+	glVertex3d(5.362164, 19.043976, -20.03356);
+	glVertex3d(6.090729, 19.043976, -19.304991);
+	glVertex3d(6.090729, 19.043976, -40.047691);
+	glEnd();
+
+	//atas
+	glBegin(GL_POLYGON);
+	glColor3f(1.0, 0.0, 1.0);
+	glVertex3d(-22.494768, -0.069272, 7.823372);
+	glVertex3d(-22.494768, -0.069272, 18.537577);
+	glVertex3d(-23.223333, -0.069272, 19.266142);
+	glVertex3d(-23.223333, -0.069272, 7.094806);
+	glEnd();
+
+	//atas
+	glBegin(GL_POLYGON);
+	glColor3f(1.0, 0.0, 1.0);
+	glVertex3d(5.362164, -0.069272, 18.537577);
+	glVertex3d(5.362164, -0.069272, -0.747992);
+	glVertex3d(6.090729, -0.069272, -1.476557);
+	glVertex3d(6.090729, -0.069272, 19.266142);
+	glEnd();
+
+	//atas
+	glBegin(GL_POLYGON);
+	glColor3f(1.0, 0.0, 1.0);
+	glVertex3d(5.362164, -0.069272, -0.747992);
+	glVertex3d(3.219322, -0.069272, -0.747992);
+	glVertex3d(3.947889, -0.069272, -1.476557);
+	glVertex3d(6.090729, -0.069272, -1.476557);
+	glEnd();
+
+	//atas
+	glBegin(GL_POLYGON);
+	glColor3f(1.0, 0.0, 1.0);
+	glVertex3d(3.219322, 19.043976, -0.747992);
+	glVertex3d(5.362164, 19.043976, -0.747992);
+	glVertex3d(6.090729, 19.043976, -1.476557);
+	glVertex3d(3.947889, 19.043976, -1.476557);
+	glEnd();
+
+	//atas
+	glBegin(GL_POLYGON);
+	glColor3f(1.0, 0.0, 1.0);
+	glVertex3d(3.219322, -0.069272, -0.747992);
+	glVertex3d(3.219322, -0.069272, -20.03356);
+	glVertex3d(3.947889, -0.069272, -19.304991);
+	glVertex3d(3.947889, -0.069272, -1.476557);
+	glEnd();
+
+	//atas
+	glBegin(GL_POLYGON);
+	glColor3f(1.0, 0.0, 1.0);
+	glVertex3d(-11.780563, 19.043976, 7.823372);
+	glVertex3d(-11.780563, 19.043976, 12.109055);
+	glVertex3d(-11.051997, 19.043976, 11.380488);
+	glVertex3d(-11.051997, 19.043976, 7.094806);
+	glEnd();
+
+	//atas
+	glBegin(GL_POLYGON);
+	glColor3f(1.0, 0.0, 1.0);
+	glVertex3d(-11.780563, 19.043976, -0.747992);
+	glVertex3d(-11.780563, 19.043976, -20.03356);
+	glVertex3d(-12.50913, 19.043976, -19.304991);
+	glVertex3d(-12.50913, 19.043976, -0.019424);
+	glEnd();
+
+	//atas
+	glBegin(GL_POLYGON);
+	glColor3f(1.0, 0.0, 1.0);
+	glVertex3d(5.362164, -0.069272, -39.31913);
+	glVertex3d(-13.923405, -0.069272, -39.31913);
+	glVertex3d(-14.65197, -0.069272, -40.047691);
+	glVertex3d(6.090729, -0.069272, -40.047691);
+	glEnd();
+
+	//atas
+	glBegin(GL_POLYGON);
+	glColor3f(1.0, 0.0, 1.0);
+	glVertex3d(-13.923405, 19.043976, -39.31913);
+	glVertex3d(5.362164, 19.043976, -39.31913);
+	glVertex3d(6.090729, 19.043976, -40.047691);
+	glVertex3d(-14.65197, 19.043976, -40.047691);
+	glEnd();
+
+	//atas
+	glBegin(GL_POLYGON);
+	glColor3f(1.0, 0.0, 1.0);
+	glVertex3d(-13.923405, -0.069272, -39.31913);
+	glVertex3d(-13.923405, -0.069272, -20.03356);
+	glVertex3d(-14.65197, -0.069272, -19.304991);
+	glVertex3d(-14.65197, -0.069272, -40.047691);
+	glEnd();
+
+	//atas
+	glBegin(GL_POLYGON);
+	glColor3f(1.0, 0.0, 1.0);
+	glVertex3d(5.362164, -0.069272, -20.03356);
+	glVertex3d(5.362164, -0.069272, -39.31913);
+	glVertex3d(6.090729, -0.069272, -40.047691);
+	glVertex3d(6.090729, -0.069272, -19.304991);
+	glEnd();
+
+	//atas
+	glBegin(GL_POLYGON);
+	glColor3f(1.0, 0.0, 1.0);
+	glVertex3d(-22.494768, 19.043976, 7.823372);
+	glVertex3d(-11.780563, 19.043976, 7.823372);
+	glVertex3d(-11.051997, 19.043976, 7.094806);
+	glVertex3d(-23.223333, 19.043976, 7.094806);
+	glEnd();
+
+	//atas
+	glBegin(GL_POLYGON);
+	glColor3f(1.0, 0.0, 1.0);
+	glVertex3d(-11.780563, -0.069272, 7.823372);
+	glVertex3d(-22.494768, -0.069272, 7.823372);
+	glVertex3d(-23.223333, -0.069272, 7.094806);
+	glVertex3d(-11.051997, -0.069272, 7.094806);
+	glEnd();
+
+	//atas
+	glBegin(GL_POLYGON);
+	glColor3f(1.0, 0.0, 1.0);
+	glVertex3d(3.219322, 19.043976, -20.03356);
+	glVertex3d(3.219322, 19.043976, -0.747992);
+	glVertex3d(3.947889, 19.043976, -1.476557);
+	glVertex3d(3.947889, 19.043976, -19.304991);
+	glEnd();
+
+	//atas
+	glBegin(GL_POLYGON);
+	glColor3f(1.0, 0.0, 1.0);
+	glVertex3d(-11.780563, -0.069272, 12.109055);
+	glVertex3d(-11.780563, -0.069272, 7.823372);
+	glVertex3d(-11.051997, -0.069272, 7.094806);
+	glVertex3d(-11.051997, -0.069272, 11.380488);
+	glEnd();
+
+	//atas
+	glBegin(GL_POLYGON);
+	glColor3f(1.0, 0.0, 1.0);
+	glVertex3d(-13.923405, 19.043976, -20.03356);
+	glVertex3d(-13.923405, 19.043976, -39.31913);
+	glVertex3d(-14.65197, 19.043976, -40.047691);
+	glVertex3d(-14.65197, 19.043976, -19.304991);
+	glEnd();
+
+	//atas
+	glBegin(GL_POLYGON);
+	glColor3f(1.0, 0.0, 1.0);
+	glVertex3d(-11.780563, -0.069272, -20.03356);
+	glVertex3d(-11.780563, -0.069272, -0.747992);
+	glVertex3d(-12.50913, -0.069272, -0.019424);
+	glVertex3d(-12.50913, -0.069272, -19.304991);
+	glEnd();
+
+	//atas
+	glBegin(GL_POLYGON);
+	glColor3f(1.0, 0.0, 1.0);
+	glVertex3d(-11.780563, -0.069272, -0.747992);
+	glVertex3d(-9.637723, -0.069272, -0.747992);
+	glVertex3d(-10.366289, -0.069272, -0.019424);
+	glVertex3d(-12.50913, -0.069272, -0.019424);
+	glEnd();
+
+
+	glBegin(GL_POLYGON);
+	glColor3f(1.0, 0.0, 1.0);
+	glVertex3d(-9.637723, 19.043976, -0.747992);
+	glVertex3d(-11.780563, 19.043976, -0.747992);
+	glVertex3d(-12.50913, 19.043976, -0.019424);
+	glVertex3d(-10.366289, 19.043976, -0.019424);
+	glEnd();
+
+	glBegin(GL_POLYGON);
+	glColor3f(1.0, 0.0, 1.0);
+	glVertex3d(-9.637723, -0.069272, -0.747992);
+	glVertex3d(-9.637723, -0.069272, 12.109055);
+	glVertex3d(-10.366289, -0.069272, 11.380488);
+	glVertex3d(-10.366289, -0.069272, -0.019424);
+	glEnd();
+
+	glBegin(GL_POLYGON);
+	glColor3f(1.0, 0.0, 1.0);
+	glVertex3d(5.362164, 19.043976, 18.537577);
+	glVertex3d(-22.494768, 19.043976, 18.537577);
+	glVertex3d(-23.223333, 19.043976, 19.266142);
+	glVertex3d(6.090729, 19.043976, 19.266142);
+	glEnd();
+
+	glBegin(GL_POLYGON);
+	glColor3f(1.0, 0.0, 1.0);
+	glVertex3d(3.219322, -0.069272, -20.03356);
+	glVertex3d(5.362164, -0.069272, -20.03356);
+	glVertex3d(6.090729, -0.069272, -19.304991);
+	glVertex3d(3.947889, -0.069272, -19.304991);
+	glEnd();
+
+	glBegin(GL_POLYGON);
+	glColor3f(1.0, 0.0, 1.0);
+	glVertex3d(5.362164, 19.043976, -20.03356);
+	glVertex3d(3.219322, 19.043976, -20.03356);
+	glVertex3d(3.947889, 19.043976, -19.304991);
+	glVertex3d(6.090729, 19.043976, -19.304991);
+	glEnd();
+
+	glBegin(GL_POLYGON);
+	glColor3f(1.0, 0.0, 1.0);
+	glVertex3d(-9.637723, 19.043976, 12.109055);
+	glVertex3d(-9.637723, 19.043976, -0.747992);
+	glVertex3d(-10.366289, 19.043976, -0.019424);
+	glVertex3d(-10.366289, 19.043976, 11.380488);
+	glEnd();
+
+
+	glBegin(GL_POLYGON);
+	glColor3f(1.0, 0.0, 1.0);
+	glVertex3d(5.362164, 19.043976, -0.747992);
+	glVertex3d(5.362164, 19.043976, 18.537577);
+	glVertex3d(6.090729, 19.043976, 19.266142);
+	glVertex3d(6.090729, 19.043976, -1.476557);
+	glEnd();
+
+
+	glBegin(GL_POLYGON);
+	glColor3f(1.0, 0.0, 1.0);
+	glVertex3d(-11.780563, 19.043976, 12.109055);
+	glVertex3d(-9.637723, 19.043976, 12.109055);
+	glVertex3d(-10.366289, 19.043976, 11.380488);
+	glVertex3d(-11.051997, 19.043976, 11.380488);
+	glEnd();
+
+
+	glBegin(GL_POLYGON);
+	glColor3f(1.0, 0.0, 1.0);
+	glVertex3d(-9.637723, -0.069272, 12.109055);
+	glVertex3d(-11.780563, -0.069272, 12.109055);
+	glVertex3d(-11.051997, -0.069272, 11.380488);
+	glVertex3d(-10.366289, -0.069272, 11.380488);
+	glEnd();
+
+	glBegin(GL_POLYGON);
+	glColor3f(1.0, 0.0, 1.0);
+	glVertex3d(-22.494768, -0.069272, 18.537577);
+	glVertex3d(5.362164, -0.069272, 18.537577);
+	glVertex3d(6.090729, -0.069272, 19.266142);
+	glVertex3d(-23.223333, -0.069272, 19.266142);
+	glEnd();
+
+
+	glBegin(GL_POLYGON);
+	glColor3f(1.0, 0.0, 1.0);
+	glVertex3d(-22.494768, 19.043976, 18.537577);
+	glVertex3d(-22.494768, 19.043976, 7.823372);
+	glVertex3d(-23.223333, 19.043976, 7.094806);
+	glVertex3d(-23.223333, 19.043976, 19.266142);
+	glEnd();
+}
+void atap() {
+	//atap
+	glBegin(GL_POLYGON);
+	glColor3f(1.0, 0.8, 0.0);
+	glVertex3d(-22.494768, 19.043976, 18.537577);
+	glVertex3d(5.362164, 19.043976, 18.537577);
+	glVertex3d(5.362164, 19.043976, -0.747992);
+	glVertex3d(3.219322, 19.043976, -0.747992);
+	glVertex3d(3.219322, 19.043976, -20.03356);
+	glVertex3d(5.362164, 19.043976, -20.03356);
+	glVertex3d(5.362164, 19.043976, -39.31913);
+	glVertex3d(-13.923405, 19.043976, -39.31913);
+	glVertex3d(-13.923405, 19.043976, -20.03356);
+	glVertex3d(-11.780563, 19.043976, -20.03356);
+	glVertex3d(-11.780563, 19.043976, -0.747992);
+	glVertex3d(-9.637723, 19.043976, -0.747992);
+	glVertex3d(-9.637723, 19.043976, 12.109055);
+	glVertex3d(-11.780563, 19.043976, 12.109055);
+	glVertex3d(-11.780563, 19.043976, 7.823372);
+	glVertex3d(-22.494768, 19.043976, 7.823372);
+	glEnd();
+}
+void lantai() {
+	//lantai
+	glBegin(GL_POLYGON);
+	glColor3f(1.0, 0.2, 0.0);
+	glVertex3d(5.362164, -0.069272, 18.537577);
+	glVertex3d(5.362164, -0.069272, -0.747992);
+	glVertex3d(3.219322, -0.069272, -0.747992);
+	glVertex3d(3.219322, -0.069272, -20.03356);
+	glVertex3d(5.362164, -0.069272, -20.03356);
+	glVertex3d(5.362164, -0.069272, -39.31913);
+	glVertex3d(-13.923405, -0.069272, -39.31913);
+	glVertex3d(-13.923405, -0.069272, -20.03356);
+	glVertex3d(-11.780563, -0.069272, -20.03356);
+	glVertex3d(-11.780563, -0.069272, -0.747992);
+	glVertex3d(-9.637723, -0.069272, -0.747992);
+	glVertex3d(-9.637723, -0.069272, 12.109055);
+	glVertex3d(-11.780563, -0.069272, 12.109055);
+	glVertex3d(-11.780563, -0.069272, 7.823372);
+	glVertex3d(-22.494768, -0.069272, 7.823372);
+	glVertex3d(-22.494768, -0.069272, 18.537577);
+	glEnd();
+}
+void tampil(void)
+{
+	if (is_depth)
+		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	else
+		glClear(GL_COLOR_BUFFER_BIT);
+
+	
+	//tembokL();
+	//tembok2();
+	//utama_lapis1();
+	//utama_lapis2();
+	//lapisan_dinding();
+	atap();
+	//lantai();
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+	//dinding luar
+	glBegin(GL_POLYGON);
+	glColor3f(0.0, 0.2, 1.0);
+	glVertex3d(-22.494768, 0.886391, 18.537577);
+	glVertex3d(-22.494768, -0.069272, 18.537577);
+	glVertex3d(5.362164, -0.069272, 18.537577);
+	glVertex3d(5.362164, 0.886391, 18.537577);
+	glEnd();
+
+	glBegin(GL_POLYGON);
+	glColor3f(0.0, 0.2, 1.0);
+	glVertex3d(5.362164, 0.886391, 18.537577);
+	glVertex3d(5.362164, -0.069272, 18.537577);
+	glVertex3d(5.362164, -0.069272, -0.747992);
+	glVertex3d(5.362164, 0.886391, -0.747992);
+	glEnd();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
