@@ -8,7 +8,6 @@
 #include <math.h>
 
 void init(void);
-void initGL(void);
 void tampil(void);
 void keyboard(unsigned char, int, int);
 void ukuran(int, int);
@@ -36,9 +35,9 @@ int main(int argc, char** argv)
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
 	glutInitWindowSize(800, 600);
 	glutInitWindowPosition(250, 80);
-	glutCreateWindow("3D");
+	glutCreateWindow("Tugas Rancang_Kelompok 7");
 	init();
-	initGL();
+	//initGL();
 	//glutReshapeFunc(reshape);
 	glutDisplayFunc(tampil);
 	glutKeyboardFunc(keyboard);
@@ -467,7 +466,7 @@ void utama_lapis1(void) {
 void utama_lapis2(void) {
 	//utama lapis2
 	glBegin(GL_POLYGON);
-	glColor3f(1.0, 0.8, 0.0);
+	glColor3f(0.458, 0.458, 0.458); //Abu2 Tua
 	glVertex3d(-23.223333, 19.043976, 19.266142);
 	glVertex3d(-23.223333, -0.069272, 19.266142);
 	glVertex3d(6.090729, -0.069272, 19.266142);
@@ -476,7 +475,7 @@ void utama_lapis2(void) {
 
 	//tengah 2
 	glBegin(GL_POLYGON);
-	glColor3f(1.0, 0.9, 0.0);
+	glColor3f(0.682, 0.682, 0.682);//Abu2 Muda
 	glVertex3d(6.090729, 19.043976, 19.266142);
 	glVertex3d(6.090729, -0.069272, 19.266142);
 	glVertex3d(6.090729, -0.069272, -1.476557);
@@ -485,7 +484,7 @@ void utama_lapis2(void) {
 
 	//tengah 2
 	glBegin(GL_POLYGON);
-	glColor3f(1.0, 0.9, 0.0);
+	glColor3f(0.458, 0.458, 0.458); //Abu2 Tua
 	glVertex3d(6.090729, 19.043976, -1.476557);
 	glVertex3d(6.090729, -0.069272, -1.476557);
 	glVertex3d(3.947889, -0.069272, -1.476557);
@@ -494,7 +493,7 @@ void utama_lapis2(void) {
 
 	//tengah 2
 	glBegin(GL_POLYGON);
-	glColor3f(1.0, 0.9, 0.0);
+	glColor3f(0.682, 0.682, 0.682);//Abu2 Muda
 	glVertex3d(3.947889, 19.043976, -1.476557);
 	glVertex3d(3.947889, -0.069272, -1.476557);
 	glVertex3d(3.947889, -0.069272, -19.304991);
@@ -503,7 +502,7 @@ void utama_lapis2(void) {
 
 	//tengah2
 	glBegin(GL_POLYGON);
-	glColor3f(1.0, 0.9, 0.0);
+	glColor3f(0.458, 0.458, 0.458); //Abu2 Tua
 	glVertex3d(3.947889, 19.043976, -19.304991);
 	glVertex3d(3.947889, -0.069272, -19.304991);
 	glVertex3d(6.090729, -0.069272, -19.304991);
@@ -512,7 +511,7 @@ void utama_lapis2(void) {
 
 	//tengah2
 	glBegin(GL_POLYGON);
-	glColor3f(1.0, 0.9, 0.0);
+    glColor3f(0.682, 0.682, 0.682);//Abu2 Muda
 	glVertex3d(6.090729, 19.043976, -19.304991);
 	glVertex3d(6.090729, -0.069272, -19.304991);
 	glVertex3d(6.090729, -0.069272, -40.047691);
@@ -521,7 +520,7 @@ void utama_lapis2(void) {
 
 	//tengah2
 	glBegin(GL_POLYGON);
-	glColor3f(1.0, 0.9, 0.0);
+	glColor3f(0.458, 0.458, 0.458); //Abu2 Tua
 	glVertex3d(6.090729, 19.043976, -40.047691);
 	glVertex3d(6.090729, -0.069272, -40.047691);
 	glVertex3d(-14.65197, -0.069272, -40.047691);
@@ -530,7 +529,7 @@ void utama_lapis2(void) {
 
 	//tengah 2
 	glBegin(GL_POLYGON);
-	glColor3f(0.0, 1.0, 0.0);
+	glColor3f(0.682, 0.682, 0.682);//Abu2 Muda
 	glVertex3d(-14.65197, 19.043976, -40.047691);
 	glVertex3d(-14.65197, -0.069272, -40.047691);
 	glVertex3d(-14.65197, -0.069272, -19.304991);
@@ -539,7 +538,7 @@ void utama_lapis2(void) {
 
 	//tengah 2
 	glBegin(GL_POLYGON);
-	glColor3f(0.0, 1.0, 0.0);
+	glColor3f(0.458, 0.458, 0.458); //Abu2 Tua
 	glVertex3d(-14.65197, 19.043976, -19.304991);
 	glVertex3d(-14.65197, -0.069272, -19.304991);
 	glVertex3d(-12.50913, -0.069272, -19.304991);
@@ -548,7 +547,7 @@ void utama_lapis2(void) {
 
 	//tengah2
 	glBegin(GL_POLYGON);
-	glColor3f(0.0, 1.0, 0.0);
+	glColor3f(0.682, 0.682, 0.682);//Abu2 Muda
 	glVertex3d(-12.50913, 19.043976, -19.304991);
 	glVertex3d(-12.50913, -0.069272, -19.304991);
 	glVertex3d(-12.50913, -0.069272, -0.019424);
@@ -557,7 +556,7 @@ void utama_lapis2(void) {
 
 	//tengah2
 	glBegin(GL_POLYGON);
-	glColor3f(0.0, 1.0, 0.0);
+	glColor3f(0.458, 0.458, 0.458); //Abu2 Tua
 	glVertex3d(-12.50913, 19.043976, -0.019424);
 	glVertex3d(-12.50913, -0.069272, -0.019424);
 	glVertex3d(-10.366289, -0.069272, -0.019424);
@@ -566,7 +565,7 @@ void utama_lapis2(void) {
 
 	//tengah2
 	glBegin(GL_POLYGON);
-	glColor3f(0.0, 1.0, 0.0);
+	glColor3f(0.682, 0.682, 0.682);//Abu2 Muda
 	glVertex3d(-10.366289, 19.043976, -0.019424);
 	glVertex3d(-10.366289, -0.069272, -0.019424);
 	glVertex3d(-10.366289, -0.069272, 11.380488);
@@ -575,7 +574,7 @@ void utama_lapis2(void) {
 
 	//tengah2
 	glBegin(GL_POLYGON);
-	glColor3f(0.0, 0.0, 1.0);
+	glColor3f(0.458, 0.458, 0.458); //Abu2 Tua
 	glVertex3d(-10.366289, 19.043976, 11.380488);
 	glVertex3d(-10.366289, -0.069272, 11.380488);
 	glVertex3d(-11.051997, -0.069272, 11.380488);
@@ -584,7 +583,7 @@ void utama_lapis2(void) {
 
 	//tengah2
 	glBegin(GL_POLYGON);
-	glColor3f(0.0, 0.0, 1.0);
+	glColor3f(0.682, 0.682, 0.682);//Abu2 Muda
 	glVertex3d(-11.051997, 19.043976, 11.380488);
 	glVertex3d(-11.051997, -0.069272, 11.380488);
 	glVertex3d(-11.051997, -0.069272, 7.094806);
@@ -593,7 +592,7 @@ void utama_lapis2(void) {
 
 	//tengah2
 	glBegin(GL_POLYGON);
-	glColor3f(0.0, 0.0, 1.0);
+	glColor3f(0.458, 0.458, 0.458); //Abu2 Tua
 	glVertex3d(-11.051997, 19.043976, 7.094806);
 	glVertex3d(-11.051997, -0.069272, 7.094806);
 	glVertex3d(-23.223333, -0.069272, 7.094806);
@@ -602,7 +601,7 @@ void utama_lapis2(void) {
 
 	//tengah 2
 	glBegin(GL_POLYGON);
-	glColor3f(0.0, 0.0, 1.0);
+	glColor3f(0.682, 0.682, 0.682);//Abu2 Muda
 	glVertex3d(-23.223333, 19.043976, 7.094806);
 	glVertex3d(-23.223333, -0.069272, 7.094806);
 	glVertex3d(-23.223333, -0.069272, 19.266142);
@@ -611,7 +610,7 @@ void utama_lapis2(void) {
 
 	//tengah2
 	glBegin(GL_POLYGON);
-	glColor3f(0.0, 0.0, 1.0);
+	glColor3f(0.458, 0.458, 0.458); //Abu2 Tua
 	glVertex3d(-13.923405, -0.069272, -20.03356);
 	glVertex3d(-11.780563, -0.069272, -20.03356);
 	glVertex3d(-12.50913, -0.069272, -19.304991);
@@ -918,7 +917,7 @@ void atap() {
 void lantai() {
 	//lantai
 	glBegin(GL_POLYGON);
-	glColor3f(1.0, 0.2, 0.0);
+	glColor3f(1.0, 0.0, 0.0);
 	glVertex3d(5.362164, -0.069272, 18.537577);
 	glVertex3d(5.362164, -0.069272, -0.747992);
 	glVertex3d(3.219322, -0.069272, -0.747992);
@@ -2366,7 +2365,6 @@ void mouseMotion(int x, int y)
 		glutPostRedisplay();
 	}
 }
-
 void ukuran(int lebar, int tinggi)
 {
 	if (tinggi == 0) tinggi = 1;
