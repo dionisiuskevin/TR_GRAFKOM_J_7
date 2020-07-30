@@ -8,6 +8,7 @@
 #include <math.h>
 
 void init(void);
+void initGL(void);
 void tampil(void);
 void keyboard(unsigned char, int, int);
 void ukuran(int, int);
@@ -37,7 +38,7 @@ int main(int argc, char** argv)
 	glutInitWindowPosition(250, 80);
 	glutCreateWindow("3D");
 	init();
-	//initGL();
+	initGL();
 	//glutReshapeFunc(reshape);
 	glutDisplayFunc(tampil);
 	glutKeyboardFunc(keyboard);
