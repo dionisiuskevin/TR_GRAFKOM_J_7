@@ -281,7 +281,7 @@ void tembok2(void) {
 void utama_lapis1(void) {
 	//tembok belakang 1
 	glBegin(GL_POLYGON);
-	glColor3f(1.0, 1.0, 1.0);
+	glColor3f(0.458, 0.458, 0.458); //Abu2 Tua
 	glVertex3d(-22.494768, 19.043976, 18.537577);
 	glVertex3d(5.362164, 19.043976, 18.537577);
 	glVertex3d(5.362164, -0.069272, 18.537577);
@@ -290,7 +290,7 @@ void utama_lapis1(void) {
 
 	//sisi kanan tembok belakang
 	glBegin(GL_POLYGON);
-	glColor3f(0.0, 1.0, 0.1);
+	glColor3f(0.682, 0.682, 0.682); //Abu2 Muda
 	glVertex3d(5.362164, 19.043976, 18.537577);
 	glVertex3d(5.362164, 19.043976, -0.747992);
 	glVertex3d(5.362164, -0.069272, -0.747992);
@@ -299,7 +299,7 @@ void utama_lapis1(void) {
 
 	//sisi belakang
 	glBegin(GL_POLYGON);
-	glColor3f(0.0, 0.5, 0.1);
+	glColor3f(0.458, 0.458, 0.458); //Abu2 Tua
 	glVertex3d(5.362164, 19.043976, -0.747992);
 	glVertex3d(3.219322, 19.043976, -0.747992);
 	glVertex3d(3.219322, -0.069272, -0.747992);
@@ -309,7 +309,7 @@ void utama_lapis1(void) {
 
 	//penghubung tembokL dan tembok 2
 	glBegin(GL_POLYGON);
-	glColor3f(0.0, 0.5, 0.2);
+	glColor3f(0.682, 0.682, 0.682); //Abu2 Muda
 	glVertex3d(3.219322, 19.043976, -0.747992);
 	glVertex3d(3.219322, 19.043976, -20.03356);
 	glVertex3d(3.219322, -0.069272, -20.03356);
@@ -318,7 +318,7 @@ void utama_lapis1(void) {
 
 	//dinding penghubung
 	glBegin(GL_POLYGON);
-	glColor3f(0.0, 0.5, 0.3);
+	glColor3f(0.458, 0.458, 0.458); // Abu2 Tua
 	glVertex3d(3.219322, 19.043976, -20.03356);
 	glVertex3d(5.362164, 19.043976, -20.03356);
 	glVertex3d(5.362164, -0.069272, -20.03356);
@@ -327,7 +327,7 @@ void utama_lapis1(void) {
 
 	//dinding penghubung
 	glBegin(GL_POLYGON);
-	glColor3f(0.0, 0.5, 0.4);
+	glColor3f(0.682, 0.682, 0.682); //Abu2 Muda
 	glVertex3d(5.362164, 19.043976, -20.03356);
 	glVertex3d(5.362164, 19.043976, -39.31913);
 	glVertex3d(5.362164, -0.069272, -39.31913);
@@ -336,7 +336,7 @@ void utama_lapis1(void) {
 
 	//dinding penghubung belakang
 	glBegin(GL_POLYGON);
-	glColor3f(0.0, 0.5, 0.5);
+	glColor3f(0.458, 0.458, 0.458); //Abu2 Tua
 	glVertex3d(5.362164, 19.043976, -39.31913);
 	glVertex3d(-13.923405, 19.043976, -39.31913);
 	glVertex3d(-13.923405, -0.069272, -39.31913);
@@ -345,16 +345,16 @@ void utama_lapis1(void) {
 
 	//dinding penghubung
 	glBegin(GL_POLYGON);
-	glColor3f(0.0, 0.6, 0.1);
+	glColor3f(0.682, 0.682, 0.682); //Abu2 Muda
 	glVertex3d(-13.923405, 19.043976, -39.31913);
 	glVertex3d(-13.923405, 19.043976, -20.03356);
 	glVertex3d(-13.923405, -0.069272, -20.03356);
 	glVertex3d(-13.923405, -0.069272, -39.31913);
 	glEnd();
 
-	//tengah depan
+	//tengah depan sisi kecil penghubung
 	glBegin(GL_POLYGON);
-	glColor3f(1.0, 0.0, 0.0);
+	glColor3f(0.458, 0.458, 0.458); //Abu2 Tua
 	glVertex3d(-13.923405, 19.043976, -20.03356);
 	glVertex3d(-11.780563, 19.043976, -20.03356);
 	glVertex3d(-11.780563, -0.069272, -20.03356);
@@ -363,16 +363,16 @@ void utama_lapis1(void) {
 
 	//tengah depan
 	glBegin(GL_POLYGON);
-	glColor3f(1.0, 0.1, 0.0);
+	glColor3f(0.682, 0.682, 0.682); // Abu2 Muda
 	glVertex3d(-11.780563, 19.043976, -20.03356);
 	glVertex3d(-11.780563, 19.043976, -0.747992);
 	glVertex3d(-11.780563, -0.069272, -0.747992);
 	glVertex3d(-11.780563, -0.069272, -20.03356);
 	glEnd();
 
-	//tengah
+	//tengah sisi kecil penghubung
 	glBegin(GL_POLYGON);
-	glColor3f(1.0, 0.2, 0.0);
+	glColor3f(0.458, 0.458, 0.458); //Abu2 Tua
 	glVertex3d(-11.780563, 19.043976, -0.747992);
 	glVertex3d(-9.637723, 19.043976, -0.747992);
 	glVertex3d(-9.637723, -0.069272, -0.747992);
@@ -381,7 +381,7 @@ void utama_lapis1(void) {
 
 	//tengah
 	glBegin(GL_POLYGON);
-	glColor3f(1.0, 0.3, 0.0);
+	glColor3f(0.682, 0.682, 0.682); //Abu2 Muda
 	glVertex3d(-9.637723, 19.043976, -0.747992);
 	glVertex3d(-9.637723, 19.043976, 12.109055);
 	glVertex3d(-9.637723, -0.069272, 12.109055);
@@ -390,7 +390,7 @@ void utama_lapis1(void) {
 
 	//tengah
 	glBegin(GL_POLYGON);
-	glColor3f(1.0, 0.4, 0.0);
+	glColor3f(0.458, 0.458, 0.458); //Abu2 Tua
 	glVertex3d(-9.637723, 19.043976, 12.109055);
 	glVertex3d(-11.780563, 19.043976, 12.109055);
 	glVertex3d(-11.780563, -0.069272, 12.109055);
@@ -399,7 +399,7 @@ void utama_lapis1(void) {
 
 	//tengah
 	glBegin(GL_POLYGON);
-	glColor3f(1.0, 0.5, 0.0);
+	glColor3f(0.682, 0.682, 0.682); //Abu2 Muda
 	glVertex3d(-11.780563, 19.043976, 12.109055);
 	glVertex3d(-11.780563, 19.043976, 7.823372);
 	glVertex3d(-11.780563, -0.069272, 7.823372);
@@ -408,7 +408,7 @@ void utama_lapis1(void) {
 
 	//tengah
 	glBegin(GL_POLYGON);
-	glColor3f(1.0, 0.6, 0.0);
+	glColor3f(0.682, 0.682, 0.682);//Abu2 Muda
 	glVertex3d(-11.780563, 19.043976, 7.823372);
 	glVertex3d(-22.494768, 19.043976, 7.823372);
 	glVertex3d(-22.494768, -0.069272, 7.823372);
@@ -417,7 +417,7 @@ void utama_lapis1(void) {
 
 	//tengah
 	glBegin(GL_POLYGON);
-	glColor3f(1.0, 0.7, 0.0);
+	glColor3f(0.458, 0.458, 0.458); //Abu2 Tua
 	glVertex3d(-22.494768, 19.043976, 7.823372);
 	glVertex3d(-22.494768, 19.043976, 18.537577);
 	glVertex3d(-22.494768, -0.069272, 18.537577);
