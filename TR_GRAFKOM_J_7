@@ -62,7 +62,7 @@ void jendela(void) {
 void tembokL(void) {
 	//tembok depan
 	glBegin(GL_POLYGON);
-	glColor3f(1.0, 1.0, 0.0);
+	glColor3f(0.396, 0.811, 0.972);
 	glVertex3d(3.246598, 19.306227, -0.925725);
 	glVertex3d(-3.7622, 19.306227, -0.925724);
 	glVertex3d(-3.7622, 2.485111, -0.925724);
@@ -71,7 +71,7 @@ void tembokL(void) {
 
 	//sisi kiri
 	glBegin(GL_POLYGON);
-	glColor3f(1.0, 0.0, 0.0);
+	glColor3f(0.043, 0.674, 0.917);
 	glVertex3d(-3.7622, 19.306227, -0.925724);
 	glVertex3d(-3.762198, 19.306227, 13.091872);
 	glVertex3d(-3.762198, 2.485111, 13.091872);
@@ -80,7 +80,7 @@ void tembokL(void) {
 
 	//tembok depan2
 	glBegin(GL_POLYGON);
-	glColor3f(1.0, 0.1, 0.0);
+	glColor3f(0.396, 0.811, 0.972);
 	glVertex3d(3.246598, 19.306227, -2.117221);
 	glVertex3d(3.246598, 2.485111, -2.117221);
 	glVertex3d(-4.953695, 2.485111, -2.11722);
@@ -89,7 +89,7 @@ void tembokL(void) {
 
 	//sisi kiri 2
 	glBegin(GL_POLYGON);
-	glColor3f(1.0, 0.2, 0.0);
+	glColor3f(0.043, 0.674, 0.917);
 	glVertex3d(-4.953695, 19.306227, -2.11722);
 	glVertex3d(-4.953695, 2.485111, -2.11722);
 	glVertex3d(-4.953694, 2.485111, 13.091872);
@@ -98,7 +98,7 @@ void tembokL(void) {
 
 	//penutup tembok 1
 	glBegin(GL_POLYGON);
-	glColor3f(0.0, 0.3, 1.0);
+	glColor3f(0.043, 0.674, 0.917);
 	glVertex3d(3.246598, 19.306227, -0.925725);
 	glVertex3d(3.246598, 2.485111, -0.925725);
 	glVertex3d(3.246598, 2.485111, -2.117221);
@@ -107,7 +107,7 @@ void tembokL(void) {
 
 	//penutup tembok bawah
 	glBegin(GL_POLYGON);
-	glColor3f(0.0, 0.4, 1.0);
+	glColor3f(0.043, 0.674, 0.917);
 	glVertex3d(3.246598, 2.485111, -0.925725);
 	glVertex3d(-3.7622, 2.485111, -0.925724);
 	glVertex3d(-4.953695, 2.485111, -2.11722);
@@ -116,7 +116,7 @@ void tembokL(void) {
 
 	//penutup tembok depan1
 	glBegin(GL_POLYGON);
-	glColor3f(0.0, 0.5, 1.0);
+	glColor3f(0.396, 0.811, 0.972);
 	glVertex3d(-3.762198, 2.485111, 13.091872);
 	glVertex3d(-3.762198, 19.306227, 13.091872);
 	glVertex3d(-4.953694, 19.306227, 13.091872);
@@ -125,7 +125,7 @@ void tembokL(void) {
 
 	//penutup tembok bawah1
 	glBegin(GL_POLYGON);
-	glColor3f(0.0, 0.1, 0.1);
+	glColor3f(0.043, 0.674, 0.917);
 	glVertex3d(-3.7622, 2.485111, -0.925724);
 	glVertex3d(-3.762198, 2.485111, 13.091872);
 	glVertex3d(-4.953694, 2.485111, 13.091872);
@@ -134,7 +134,7 @@ void tembokL(void) {
 
 	//penutup tembok atas1
 	glBegin(GL_POLYGON);
-	glColor3f(1.0, 1.0, 1.0);
+	glColor3f(0.396, 0.811, 0.972);
 	glVertex3d(-3.7622, 19.306227, -0.925724);
 	glVertex3d(3.246598, 19.306227, -0.925725);
 	glVertex3d(3.246598, 19.306227, -2.117221);
@@ -143,7 +143,7 @@ void tembokL(void) {
 
 	//penutup tembok atas2
 	glBegin(GL_POLYGON);
-	glColor3f(1.0, 1.0, 1.0);
+	glColor3f(0.043, 0.674, 0.917);
 	glVertex3d(-3.762198, 19.306227, 13.091872);
 	glVertex3d(-3.7622, 19.306227, -0.925724);
 	glVertex3d(-4.953695, 19.306227, -2.11722);
@@ -153,7 +153,7 @@ void tembokL(void) {
 void tembok2(void) {
 	//tembok2
 	glBegin(GL_POLYGON);
-	glColor3f(0.0, 0.0, 1.0);
+	glColor3f(0.396, 0.811, 0.972);
 	glVertex3d(3.271061, 19.564161, -20.2087);
 	glVertex3d(3.271061, 2.743045, -20.2087);
 	glVertex3d(-3.737737, 2.743045, -20.2087);
@@ -162,7 +162,7 @@ void tembok2(void) {
 
 	//sisi tembok2
 	glBegin(GL_POLYGON);
-	glColor3f(0.0, 0.0, 1.0);
+	glColor3f(0.043, 0.674, 0.917);
 	glVertex3d(-3.737737, 19.564161, -20.2087);
 	glVertex3d(-3.737737, 2.743045, -20.2087);
 	glVertex3d(-3.737738, 2.743045, -34.226295);
@@ -171,7 +171,7 @@ void tembok2(void) {
 
 	//sisi tembok2 depan
 	glBegin(GL_POLYGON);
-	glColor3f(0.0, 0.0, 1.0);
+	glColor3f(0.396, 0.811, 0.972);
 	glVertex3d(-3.737738, 19.564161, -34.226295);
 	glVertex3d(-3.737738, 2.743045, -34.226295);
 	glVertex3d(5.513876, 2.743045, -34.226295);
@@ -180,7 +180,7 @@ void tembok2(void) {
 
 	//sisi lapis 2 tembok2
 	glBegin(GL_POLYGON);
-	glColor3f(0.0, 0.1, 0.0);
+	glColor3f(0.043, 0.674, 0.917);
 	glVertex3d(3.271061, 19.564161, -19.017204);
 	glVertex3d(-4.929232, 19.564161, -19.017204);
 	glVertex3d(-4.929232, 2.743045, -19.017204);
@@ -189,7 +189,7 @@ void tembok2(void) {
 
 	//sisi lapis tembok2
 	glBegin(GL_POLYGON);
-	glColor3f(0.0, 0.1, 0.0);
+	glColor3f(0.396, 0.811, 0.972);
 	glVertex3d(-4.929232, 19.564161, -19.017204);
 	glVertex3d(-4.929233, 19.564161, -35.417793);
 	glVertex3d(-4.929233, 2.743045, -35.417793);
@@ -198,7 +198,7 @@ void tembok2(void) {
 
 	//sisi lapis tembok2
 	glBegin(GL_POLYGON);
-	glColor3f(0.0, 0.1, 0.0);
+	glColor3f(0.043, 0.674, 0.917);
 	glVertex3d(-4.929233, 19.564161, -35.417793);
 	glVertex3d(5.513876, 19.564161, -35.417793);
 	glVertex3d(5.513876, 2.743045, -35.417793);
@@ -207,7 +207,7 @@ void tembok2(void) {
 
 	//penutup dinding tembok2
 	glBegin(GL_POLYGON);
-	glColor3f(0.1, 0.0, 0.0);
+	glColor3f(0.043, 0.674, 0.917);
 	glVertex3d(5.513876, 19.564161, -34.226295);
 	glVertex3d(5.513876, 2.743045, -34.226295);
 	glVertex3d(5.513876, 2.743045, -35.417793);
@@ -216,7 +216,7 @@ void tembok2(void) {
 
 	//penutup tembok2
 	glBegin(GL_POLYGON);
-	glColor3f(0.1, 0.0, 0.0);
+	glColor3f(0.035, 0.541, 0.733);
 	glVertex3d(3.271061, 2.743045, -20.2087);
 	glVertex3d(3.271061, 19.564161, -20.2087);
 	glVertex3d(3.271061, 19.564161, -19.017204);
@@ -225,7 +225,7 @@ void tembok2(void) {
 
 	//penutup tembok2 atas
 	glBegin(GL_POLYGON);
-	glColor3f(0.1, 0.0, 0.0);
+	glColor3f(0.043, 0.674, 0.917);
 	glVertex3d(-3.737738, 19.564161, -34.226295);
 	glVertex3d(5.513876, 19.564161, -34.226295);
 	glVertex3d(5.513876, 19.564161, -35.417793);
@@ -234,7 +234,7 @@ void tembok2(void) {
 
 	//penutup bawah
 	glBegin(GL_POLYGON);
-	glColor3f(0.2, 0.0, 0.8);
+	glColor3f(0.396, 0.811, 0.972);
 	glVertex3d(5.513876, 2.743045, -34.226295);
 	glVertex3d(-3.737738, 2.743045, -34.226295);
 	glVertex3d(-4.929233, 2.743045, -35.417793);
@@ -243,7 +243,7 @@ void tembok2(void) {
 
 	//penutup bawah 2
 	glBegin(GL_POLYGON);
-	glColor3f(0.2, 0.0, 0.8);
+	glColor3f(0.043, 0.674, 0.917);
 	glVertex3d(3.271061, 19.564161, -20.2087);
 	glVertex3d(-3.737737, 19.564161, -20.2087);
 	glVertex3d(-4.929232, 19.564161, -19.017204);
@@ -252,7 +252,7 @@ void tembok2(void) {
 
 	//penutup bawah 2
 	glBegin(GL_POLYGON);
-	glColor3f(0.2, 0.0, 0.8);
+	glColor3f(0.396, 0.811, 0.972);
 	glVertex3d(-3.737738, 2.743045, -34.226295);
 	glVertex3d(-3.737737, 2.743045, -20.2087);
 	glVertex3d(-4.929232, 2.743045, -19.017204);
@@ -261,7 +261,7 @@ void tembok2(void) {
 
 	//penutup bawah 2
 	glBegin(GL_POLYGON);
-	glColor3f(0.3, 0.0, 0.8);
+	glColor3f(0.043, 0.674, 0.917);
 	glVertex3d(-3.737737, 2.743045, -20.2087);
 	glVertex3d(3.271061, 2.743045, -20.2087);
 	glVertex3d(3.271061, 2.743045, -19.017204);
@@ -270,13 +270,14 @@ void tembok2(void) {
 
 	//penutup bawah 2
 	glBegin(GL_POLYGON);
-	glColor3f(0.3, 0.0, 0.8);
+	glColor3f(0.396, 0.811, 0.972);
 	glVertex3d(-3.737737, 19.564161, -20.2087);
 	glVertex3d(-3.737738, 19.564161, -34.226295);
 	glVertex3d(-4.929233, 19.564161, -35.417793);
 	glVertex3d(-4.929232, 19.564161, -19.017204);
 	glEnd();
 }
+
 void utama_lapis1(void) {
 	//tembok belakang 1
 	glBegin(GL_POLYGON);
