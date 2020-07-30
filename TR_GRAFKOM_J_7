@@ -11,12 +11,22 @@ void init(void);
 void tampil(void);
 void keyboard(unsigned char, int, int);
 void ukuran(int, int);
+void mouse(int button, int state, int x, int y);
+void mouseMotion(int x, int y);
+
+
+float a = 1.0, gerak = 0, x, y;
 
 double rotate_y = 0;
 double rotate_x = 0;
-double x = 0.50;
-double y = 0;
+//double x = 0.50;
+//double y = 0;
 
+float xrot = 0.0f;
+float yrot = 0.0f;
+float xdiff = 0.0f;
+float ydiff = 0.0f;
+bool mouseDown = false;
 int is_depth;
 
 int main(int argc, char** argv)
@@ -27,8 +37,12 @@ int main(int argc, char** argv)
 	glutInitWindowPosition(250, 80);
 	glutCreateWindow("3D");
 	init();
+	//initGL();
+	//glutReshapeFunc(reshape);
 	glutDisplayFunc(tampil);
 	glutKeyboardFunc(keyboard);
+	glutMouseFunc(mouse);
+	glutMotionFunc(mouseMotion);
 	glutReshapeFunc(ukuran);
 	glutMainLoop();
 	return 0;
@@ -43,6 +57,30 @@ void init(void)
 	glPointSize(9.0);
 	glLineWidth(6.0f);
 }
+
+void initGL(void) {
+	glClearColor((float)77 / 255.0f, (float)72 / 255.0f, (float)63 / 255.0f, 1);
+	glClearDepth(1.0f);
+	glEnable(GL_DEPTH_TEST);
+	glDepthFunc(GL_LEQUAL);
+	glShadeModel(GL_SMOOTH);
+	glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST);
+	glEnable(GL_BLEND);
+	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+	is_depth = 1;
+}
+
+void reshape(GLsizei width, GLsizei height) {
+	if (height == 0) height = 1;
+	GLfloat aspect = (GLfloat)width / (GLfloat)height;
+
+	glViewport(0, 0, width, height);
+
+	glMatrixMode(GL_PROJECTION);
+	glLoadIdentity();
+	gluPerspective(45.0f, aspect, 0.1f, 100.0f);
+}
+
 
 
 void jendela(void) {
@@ -2210,12 +2248,18 @@ void rak(void) {
 
 void tampil(void)
 {
-	if (is_depth)
+	/*if (is_depth)
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	else
-		glClear(GL_COLOR_BUFFER_BIT);
+		glClear(GL_COLOR_BUFFER_BIT);*/
 
-	
+	glPushMatrix();
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	gluLookAt(0,10,20,0,0,0,0,1,0);
+	glRotatef(xrot, 1, 0, 0);
+	glRotatef(yrot, 0, 1, 0);
+
+
 	tembokL();
 	tembok2();
 	utama_lapis1();
@@ -2226,8 +2270,10 @@ void tampil(void)
 	kursi();
 	meja();
 	rak();
-	
-	glPushMatrix();
+
+
+
+	//glPushMatrix();
 	glPopMatrix();
 	glutSwapBuffers();
 }
@@ -2286,6 +2332,38 @@ void keyboard(unsigned char key, int x, int y)
 		}
 	}
 	tampil();
+}
+void idle()
+{
+	if (!mouseDown)
+	{
+		xrot += 0.3f;
+		yrot += 0.4f;
+	}
+	glutPostRedisplay();
+}
+
+void mouse(int button, int state, int x, int y)
+{
+	if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN)
+	{
+		mouseDown = true;
+		xdiff = x - yrot;
+		ydiff = -y + xrot;
+	}
+	else
+		mouseDown = false;
+}
+
+void mouseMotion(int x, int y)
+{
+	if (mouseDown)
+	{
+		yrot = x - xdiff;
+		xrot = y + ydiff;
+
+		glutPostRedisplay();
+	}
 }
 
 void ukuran(int lebar, int tinggi)
