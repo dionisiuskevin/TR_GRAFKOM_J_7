@@ -2223,9 +2223,6 @@ void tampil(void)
 	lapisan_dinding();
 	atap();
 	lantai();
-	garis_bawah();
-	garis_bawah2();
-	garis_bawah3();
 	kursi();
 	meja();
 	rak();
