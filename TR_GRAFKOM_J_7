@@ -938,6 +938,7 @@ void lantai() {
 }
 void kursi(void) {
 	glBegin(GL_POLYGON);
+	glColor3f(0.0, 0.0, 1.0);
 	glVertex3d(-4.559772, 2.468824, -2.702687);
 	glVertex3d(-4.562145, 2.47316, -3.080026);
 	glVertex3d(-4.562145, 1.126197, -3.080026);
@@ -1416,6 +1417,7 @@ void kursi(void) {
 }
 void meja(void) {
 	glBegin(GL_POLYGON);
+    glColor3f(0.0, 1.0, 1.0);
 	glVertex3d(-7.612, 2.421619, -10.54153);
 	glVertex3d(-7.612, 2.583605, -10.54153);
 	glVertex3d(-7.612, 2.583605, -10.696048);
@@ -1949,6 +1951,7 @@ void meja(void) {
 
 void rak(void) {
 	glBegin(GL_POLYGON);
+    glColor3f(1.0, 1.0, 1.0);
 	glVertex3d(-6.611923, 0.0, -23.706261);
 	glVertex3d(-6.611923, 0.0, -22.441547);
 	glVertex3d(-6.611923, 9.03366, -22.441547);
